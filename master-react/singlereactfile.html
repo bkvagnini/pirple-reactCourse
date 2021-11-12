@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Single File React</title>
+
+</head>
+<body>
+    <div id="change"> This is ReactJS too! - (This is actually plain HTML)</div>
+    <p> The CDN info can be found here: <a href ="https://reactjs.org/docs/cdn-links.html">https://reactjs.org/docs/cdn-links.html</a> </p>
+    <script src ="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <script type = "text/babel">
+        const Data = () => <h1>This is a Heading 1, swapping from React</h1>; //very simple component
+
+        ReactDOM.render(<Data />, document.getElementById("change"));
+    </script>
+
+</body>
+</html>
