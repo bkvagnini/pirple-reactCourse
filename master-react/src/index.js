@@ -12,9 +12,11 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+/*
 ReactDOM.render (<App contentdata = "Some other data, changed from previous props, courtesy of App"/>, document.getElementById('data2'));
 
 //Another way to write out the render statement
+
 ReactDOM.render(
 <Clscom classdata = "data from the class component, via classdata prop" newProp = "New prop component data via newProp prop">
   This is Child Prop data within the Component data
@@ -22,7 +24,7 @@ ReactDOM.render(
   document.getElementById('Clscom')
   );
 
-
+*/ 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
