@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Clscom} from './Clscom';
 import {Signup} from './signup';
 import {Detail} from './Details';
 
@@ -16,6 +16,7 @@ function Home(props){
       <Detail ram = "8GB" hdd = "1 TB" cpu = "Core i3" > </Detail>
       <Detail hdd = "2 TB" ram = "8GB"  cpu = "Core i7" > </Detail>
       <Detail hdd = "6 TB" ram = "32 GB" > </Detail>
+      <Clscom />
     </div>
   )
   }
