@@ -1,8 +1,9 @@
 import React from 'react';
 import {Detail} from './Details';
+import {APIApp} from './APIApp';
 
 export class Clscom extends React.Component{
-    //var api_url = "http://localhost:8000/api/"
+   // var api_url = "http://localhost:8000/api/" This isn't right at all
     state = { //this could be JSON data from an API
         laptops: [ // this would be the beginning of the JSON data, starting with "[" 
             {ram: "128 GB", hdd: "4 TB", cpu: "386SX"}, 
@@ -27,6 +28,8 @@ export class Clscom extends React.Component{
             <Detail ram = {this.state.laptops[1].ram} hdd = {this.state.laptops[1].hdd} />
             <p> This is actually the details of the Desktop</p> 
             <Detail ram = {this.state.desktops[0].ram} hdd = {this.state.desktops[0].hdd} cpu = {this.state.desktops[0].cpu} />
+            <p> This is data from the Django Backend API</p>
+            <APIApp />
           </div>
         )
     }
